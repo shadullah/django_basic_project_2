@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <h1><a href="/">Home</a></h1>
+    <h1><a href="/navigation/about/">navigation_app / about</a></h1>
+    <h1><a href="/navigation/contact/">navigation_app / Contact</a></h1>
+
+    <h2>author: {{author}}</h2>
+    <h2>age: {{age}}</h2>
+    <h2>list: {{list}}</h2>
+
+    <p>hi</p>
+    {% if age >= 20 %}
+    <h4>you will get license</h4>
+    {% elif age >= 10 and age <= 19 %}
+    <h4>you cant get license</h4>
+    {% else %}
+    <h4>you child baby</h4>
+    {% endif %}
+  </body>
+</html>
